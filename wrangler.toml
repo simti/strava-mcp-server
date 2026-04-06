@@ -1,0 +1,13 @@
+name = "strava-mcp-server"
+main = "src/index.ts"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "STRAVA_TOKENS"
+id = "REPLACE_WITH_YOUR_KV_ID"
+preview_id = "REPLACE_WITH_YOUR_KV_PREVIEW_ID"
+
+[vars]
+# Non-secret vars go here
+# Secrets are set via: wrangler secret put STRAVA_CLIENT_ID
